@@ -1,0 +1,93 @@
+.containe{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+    width: 1430px;
+    background-color: #9999FF;
+}
+
+.point{
+    margin-top: 5rem;
+    
+    margin-bottom: 1rem;
+}
+
+#text{
+    visibility: hidden;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.gifs{
+    z-index: 5;
+}
+
+button{
+    margin: 0 5rem 5rem 5rem;
+    padding: .8rem 2.5rem;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    font-family: 'DotGothic16', sans-serif;
+    transition: .5s all;
+    color: #333;
+    text-transform: uppercase;
+    text-shadow: 2px 2px pink;
+    background-color: transparent;
+    
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    letter-spacing: .2rem;
+}
+
+
+
+.kol{
+    width: 1420px;
+    height: 83px;
+    position: absolute;
+    background: #FFBBD7;
+    top: 632px;
+    visibility: visible;
+}
+
+
+.computerpoint{
+    
+    margin-right: 35rem;
+    display: flex;
+    align-content: center;
+    align-items: center;    
+}
+
+.cp,.up{
+    
+    font-size: 30px;
+    color: #333;
+    font-style: italic;
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: bold;
+}
+
+.userpoint{
+    margin-left: 35rem;
+    display: flex;
+    align-content: center;
+    align-items: center; 
+}
+
+.selectors{
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    font-family: 'DotGothic16', sans-serif;
+    letter-spacing: 5px;
+}

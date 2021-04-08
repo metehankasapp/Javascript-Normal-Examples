@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            padding: 1rem;
+            display: inline-block;
+            background-color: red;
+            cursor: pointer;
+        }
+        
+        .active {
+            display: inline-block;
+        }
+        
+        .d-none {
+            display: none;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <ul>
+        <li onclick="changeTabs('menu1')">menu1</li>
+        <li onclick="changeTabs('menu2')">menu2</li>
+        <li onclick="changeTabs('menu3')">menu3</li>
+    </ul>
+
+    <p id="menu1" class=" menuitem">111Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nostrum!</p>
+    <p id="menu2" class="d-none menuitem">222Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dignissimos!</p>
+    <p id="menu3" class="d-none menuitem">333Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, perferendis.</p>
+
+</body>
+
+
+<script>
+    function changeTabs(item) {
+        var x = document.getElementsByClassName("menuitem");
+        for (var i = 0; i < x.length; i++) {
+            x[i].classList.add('d-none');
+            document.getElementById(item).classList.remove('d-none');
+        }
+    }
+</script>
+
+</html>
